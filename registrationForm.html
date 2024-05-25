@@ -1,0 +1,27 @@
+<body>
+    <main>
+      <div class="header">
+        <h1>Sign Up</h1>
+      </div> 
+      <div class="reg-form">
+        <p>Create your account by completing the form below.</p>
+        <!-- TODO: pick correct method and action -->
+        <form id="form" method="" action="">
+          <fieldset>
+            <label for="first-name">First name<input id="first-name" name="first-name" type="text" required></label>
+            <label for="last-name">Last name<input id="last-name" name="last-name" type="text" required></label>
+            <label for="email">Email<input id="email" name="email" type="email" required></label>
+            <label for="password" id="password-label">Password<input id="password" name="password" type="password" pattern="[a-z0-9]{8,}" required></label>
+          </fieldset>
+          <fieldset id="terms-and-conds">
+            <label for="terms-and-conditions" id="terms-label">
+              <input id="terms-and-conditions" type="checkbox" name="terms" class="inline" required>I accept the <a href="">terms and conditions.</a>
+            </label>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+      </div> 
+      <div class="footer">
+      </div>
+    </main>
+</body>
