@@ -39,6 +39,9 @@ function validateInput() {
   if (emailVal === '') {
     success = false;
     setError(email, 'Email is required');
+  } else if (!validateEmail(emailVal)){
+    success = false;
+    setError(email, 'Enter a valid email address')
   } else {
     setSuccess(email);
   };
@@ -81,3 +84,11 @@ function setSuccess(element) {
     inputGroup.classList.remove('error');
 
 }
+
+const validateEmail = (emailAddress) => {
+    return String(emailAddress) 
+        .toLowerCase()
+        .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+};
