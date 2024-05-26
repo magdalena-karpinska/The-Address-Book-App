@@ -54,7 +54,7 @@ label {
   padding-left: 14px;
 }
 
-.input-group .error {
+.input-group.error {
   color:rgb(242, 18, 18);
   font-size: 16px;
   margin-top: 5px;
@@ -92,5 +92,5 @@ a {
   font-size: 18px;
   text-align: center;
   width: 80%;
-  margin: 20px auto 0 30px
+  margin: 20px auto 0 40px;
 }
