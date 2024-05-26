@@ -33,7 +33,7 @@ function validateInput() {
     success = false;
     setError(lastName, 'Last Name is required');
   } else {
-    setSuccess(las);
+    setSuccess(lastName);
   };
 
   if (emailVal === '') {
@@ -77,7 +77,7 @@ function setError(element, message) {
 
 function setSuccess(element) {
     const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('error');
+    const errorElement = inputGroup.querySelector('.error');
 
     errorElement.innerText = '';
     inputGroup.classList.add('success');
