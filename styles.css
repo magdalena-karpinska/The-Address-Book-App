@@ -39,7 +39,7 @@ h2 {
 }
 
 label {
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 600;
   margin-left: 14px;
@@ -58,6 +58,12 @@ label {
   color:rgb(242, 18, 18);
   font-size: 16px;
   margin-top: 5px;
+}
+
+div.error {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .input-terms{
