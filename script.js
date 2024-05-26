@@ -49,6 +49,9 @@ function validateInput() {
   if (passwordVal === '') {
     success = false;
     setError(password, 'Password is required');
+  } else if (passwordVal.length < 8) {
+    success = false;
+    setError(password, 'Password must be at least 8 characters long')
   } else {
     setSuccess(password);
   };
