@@ -24,7 +24,46 @@ function validateInput() {
   // Checking if a string is empty
   if (firstNameVal === '') {
     success = false;
-    setError()
-  }
-  setSuccess()
+    setError();
+  } else {
+    setSuccess();
+  };
+
+  if (lastNameVal === '') {
+    success = false;
+    setError();
+  } else {
+    setSuccess();
+  };
+
+  if (emailVal === '') {
+    success = false;
+    setError();
+  } else {
+    setSuccess();
+  };
+
+  if (passwordVal === '') {
+    success = false;
+    setError();
+  } else {
+    setSuccess();
+  };
+
+  if (cpasswordVal === '') {
+    success = false;
+    setError();
+  } else if (cpasswordVal !== passwordVal) {
+    success = false;
+    SetError();
+  } else {
+    setSuccess();
+  };
+
+  return success;
+}
+
+function setError(element, message) {
+    const inputGroup = element.parentElement;
+    const errorElement = inputGroup
 }
